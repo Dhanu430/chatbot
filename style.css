@@ -1,0 +1,316 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('./jacob-grishey-vEz_9XCexU0-unsplash.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 1000px;
+    background-color: #f4f4f4;
+}
+
+/* 🔹 Login & Register Box */
+.container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 450px;
+}
+
+/* 🔹 Headings */
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* 🔹 Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* 🔹 Button Section */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* 🔹 Buttons */
+button {
+    width: 48%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 🔹 Links */
+p {
+    margin-top: 15px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 🔹 Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .container {
+    background: #333;
+    color: white;
+}
+
+.dark-mode input, .dark-mode button {
+    background: #444;
+    color: white;
+    border: 1px solid #666;
+}
+
+/* 🔹 Mobile Responsive */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('./luke-thornton-nHQFxJT4qOo-unsplash.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* 🔹 Chatbot Container */
+.chat-container {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 650px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 🔹 Chat Box */
+#chat-box {
+    height: 350px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 🔹 Messages Container */
+.message {
+    max-width: 75%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    word-wrap: break-word;
+    color: black; /* Ensure text color is clear */
+}
+
+/* 🔹 User Messages (Left) */
+.user-message {
+    background-color: #d1e7ff;
+    align-self: flex-start;
+    text-align: left;
+    border-radius: 10px 10px 10px 0px;
+    float: left;
+    clear: both;
+}
+
+/* 🔹 Chatbot Messages (Right) */
+.bot-message {
+    background-color: #c3e6cb;
+    align-self: flex-end;
+    text-align: right;
+    border-radius: 10px 10px 0px 10px;
+    float: right;
+    clear: both;
+}
+
+/* 🔹 Input and Buttons */
+.input-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 🔹 Input Field */
+input {
+    flex: 2;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* 🔹 Buttons */
+button {
+    flex: 1;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 🔹 Fix logout button size */
+.logout-btn {
+    background-color: red;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: auto;
+    max-width: 150px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.logout-btn:hover {
+    background-color: darkred;
+}
+
+/* 🔹 Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .chat-container {
+    background: #333;
+    color: white;
+}
+
+.dark-mode #chat-box {
+    background: #222;
+    border-color: #444;
+}
+
+/* 🔹 Dark Mode User Messages */
+.dark-mode .user-message {
+    background-color: #3a82f7;
+    color: white;
+}
+
+/* 🔹 Dark Mode Bot Messages */
+.dark-mode .bot-message {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* 🔹 Dark Mode Input & Buttons */
+.dark-mode input {
+    background: #444;
+    color: white;
+    border: 1px solid #666;
+}
+
+.dark-mode button {
+    background: #007bff;
+    color: white;
+    border: 1px solid #666;
+}
+
+.dark-mode button:hover {
+    background: #0056b3;
+}
+
+/* 🔹 Mobile Responsive */
+@media (max-width: 500px) {
+    .chat-container {
+        width: 90%;
+        height: 450px;
+    }
+
+    .input-area {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}

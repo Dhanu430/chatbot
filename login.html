@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <input type="text" id="loginUsername" placeholder="Enter Username" required>
+        <input type="password" id="loginPassword" placeholder="Enter Password" required>
+        <button id="loginBtn">Login</button>
+        <p>Don't have an account? <a href="register.html">Register</a></p>
+    </div>
+
+    <script>
+        document.getElementById('loginBtn').addEventListener('click', function () {
+            let username = document.getElementById('loginUsername').value.trim();
+            let password = document.getElementById('loginPassword').value.trim();
+
+            if (!username || !password) {
+                alert('Please enter both username and password!');
+                return;
+            }
+
+            let users = JSON.parse(localStorage.getItem('users')) || [];
+
+            // Find user in the stored array
+            let user = users.find(user => user.username === username && user.password === password);
+            if (user) {
+                alert('Login successful! Redirecting to chatbot...');
+                localStorage.setItem('loggedInUser', username);
+                window.location.href = 'chatbot.html'; // Redirect to chatbot page
+            } else {
+                alert('Incorrect username or password!');
+            }
+        });
+    </script>
+</body>
+</html>
